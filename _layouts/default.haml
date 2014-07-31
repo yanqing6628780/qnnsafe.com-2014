@@ -1,0 +1,134 @@
+!!!
+%html.no-js
+  %head
+    %meta{ charset: "UTF-8" }
+    %title {% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" href="/assets/images/qnn-icon-152.png">
+    <meta name="apple-mobile-web-app-title" content="全能保险柜">
+    <meta name="msapplication-TileImage" content="/assets/images/qnn-icon-152.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    %script{ type: "text/javascript", src: "/assets/vendor/javascripts/jquery-1.10.2.min.js" }
+    {% javascript application %}
+    {% stylesheet application %}
+  %body{ class: "{% if page.body_style %}{{ page.body_style }}{% else %}blank{% endif %}" }
+    %header
+      %a.logo{ href: "{{ site.www.qnnsafe.com }}/" } 全能保险柜
+      .header_info 
+        %a{ href: "http://www.qnnsafe.com/qnnsafe/" }
+          %img{ src: "http://www.qnnsafe.com/images/head-qnn-logo.png", title: "全能保险柜", alt: "全能保险柜" } 
+        %a{ href: "http://www.annsafe.com" }
+          %img{ src: "http://www.qnnsafe.com/images/head-annsafe-logo.png", title: "艾能保险柜", alt: "艾能保险柜" } 
+        %a{ href: "http://www.qnnsafe.com/bdgsafe/" }
+          %img{ src: "http://www.qnnsafe.com/images/head-bdgsafe-logo.png", title: "斑点狗保险柜", alt: "斑点狗保险柜" } 
+    %nav
+      %ul.nav
+        %li<
+          %a{ id: "nav-catalog", href: "{{ site.www.qnnsafe.com }}/" }<>
+            产品库
+            %span.triangle-down<>
+        %li{ class: "{% if page.belongs_to == 'support' %}active{% endif %}" }<
+          %a{ id: "nav-support", href: "{{ site.www.qnnsafe.com }}/qnnsafe/" } 旗下品牌
+        %li{ class: "{% if page.belongs_to == 'about' %}active{% endif %}" }<
+          %a{ id: "nav-about", href: "{{ site.www.qnnsafe.com }}/about/" } 认识全能
+        %li{ class: "{% if page.belongs_to == 'cases' %}active{% endif %}" }<
+          %a{ id: "nav-cases", href: "{{ site.www.qnnsafe.com }}/cases/" } 工程案例
+        %li<
+          %a{ id: "nav-franchise", href: "http://www.qnnsafe.com.cn" } 招商加盟
+        %li{ class: "{% if page.belongs_to == 'network' %}active{% endif %}" }<
+          %a{ id: "nav-stores", href: "{{ site.www.qnnsafe.com }}/network/" } 销售网点
+        %li{ class: "{% if page.belongs_to == 'contact' %}active{% endif %}" }<
+          %a{ id: "nav-contact", href: "{{ site.www.qnnsafe.com }}/contact/" } 联系我们
+      #catalog.catalog
+        %ul.line
+          %li
+            .figure
+            %ul.model
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/b-4538.html", title: "家用保险柜全能金库" } 全能金库
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/bw-6960.html", title: "家用保险箱风生水起" } 全能风生水起
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/kl-4045.html", title: "保险柜十大品牌可拉珍藏" } 全能可拉珍藏
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/gtx-3345.html", title: "保险柜钢铁侠" } 全能钢铁侠
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/glf-3340.html", title: "保险箱高尔夫" } 全能高尔夫
+          %li
+            .figure
+            %ul.model
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/zf-4542.html", title: "保险柜指点江山" } 全能指点江山
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/hg-2740.html", title: "保险柜十大品牌新皇冠" } 全能皇冠
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/sjb-1630br.html", title: "家用保险箱铁管家" } 全能铁管家
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/tgg-2040br.html", title: "家用保险柜铁金刚" } 全能铁金刚
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/fg-2940br.html", title: "保险箱钢将军" } 全能钢将军
+          %li
+            .figure
+            %ul.model
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/jd-3340.html", title: "潘多拉系列" } 全能潘多拉
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/ai-5842.html", title: "欧若拉系列" } 全能欧若拉
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/kb-5842.html", title: "酷宝系列" } 全能酷宝
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/sp-4538.html", title: "尚品系列" } 全能尚品
+              %li<
+                %a{ href: "{{ site.www.qnnsafe.com }}/sz-3842.html", title: "圣指系列" } 全能圣指
+          %li
+            .figure
+            %ul.model
+              %li<
+                %a{ title: "艾能君王" } 艾能保罗
+              %li<
+                %a{ title: "艾能君威" } 艾能君威
+              %li<
+                %a{ title: "艾能君王" } 艾能君王
+          %li
+            .figure
+            %ul.model
+              %li<
+                %a{ title: "艾能君王" } 斑点狗劳卡斯
+              %li<
+                %a{ title: "艾能君威" } 斑点狗Q酷
+        .select_box
+          .figure
+          .select
+            %select#catalog_select{ data: { selected: "{{ page.type }}" } }
+          .buttons
+            %a#catalog_go.button{ href: "#" } 前往产品页
+        .catelog_bottom
+          %a{ href: "{{ site.www.qnnsafe.com }}/find/", title: "寻找适合你的全能保险柜" } 寻找适合你的全能保险柜 &raquo;
+    {{ content }}
+    %footer
+      .left
+        &copy; 1999-2014 广东安能保险柜制造有限公司 
+        %a.beian{ href: "http://www.miitbeian.gov.cn/", target: "_blank" }粤ICP备12015444号-1
+        %a.hide_if_mobile{ href: "{{ site.www.qnnsafe.com }}/Sitemap.xml" }Sitemap
+        %br
+        网站建设维护与优化：
+        %a{ href: "http://www.8html.com/" }8HTML    
+      .right
+        %a{ href: "http://e.weibo.com/qnnsafe", class: "lang lang-weibo social-media", title: "关注全能保险柜官方微博账号", data: { mfp: { src: "/assets/images/qnn-weibo.png" } } } 全能保险柜官方微博账号
+        %a{ href: "/assets/images/qnn-weixin.png", class: "lang lang-weixin social-media", title: "扫描QR码关注全能保险柜官方微信账号" } 全能保险柜官方微信账号
+        %a{ href: "http://shop70068874.suning.com?utm_source=pl-00011&utm_medium=anneng&utm_campaign=cshop", class: "lang lang-sn", title: "全能保险柜苏宁旗舰店" } 全能保险柜苏宁旗舰店
+        %a{ href: "http://qnn.jd.com/", class: "lang lang-jd", title: "全能保险柜京东旗舰店" } 全能保险柜京东旗舰店
+        %a{ href: "http://qnn.tmall.com/", class: "lang lang-tmall", title: "全能保险柜天猫旗舰店" } 全能保险柜天猫旗舰店
+        %a{ href: "http://www.qnnsafes.com/", class: "lang lang-en", title: "English" } English
+        %a{ href: "{{ site.www.qnnsafe.com }}/", class: "lang lang-zh", title: "简体中文" } 中文
+        .clear
+      .clear
+  :javascript
+    if (window.screen && window.screen.width > 480) { // do not load this script on mobile devices
+      var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3e18bb93e1e930f408dc69df159c0a0f' type='text/javascript'%3E%3C/script%3E"));
+    }

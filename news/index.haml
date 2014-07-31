@@ -1,0 +1,35 @@
+---
+layout: default
+body_style: page
+permalink: /news/
+title: 新闻中心
+keywords: 保险箱
+description: 在这里我们会为您展示更多最新的关于全能保险柜的企业动态、媒体报道、品牌活动以及行业新闻，让您更快速直接的了解我司的最新状况。
+---
+.banner.banner-news
+%article
+  -# 请同时更改 _layouts/news_category.haml
+  .page_nav
+    %ul
+      %li.active<
+        %a{ href: "/news/" } 全部新闻
+      %li<
+        %a{ href: "/news/enterprise-news/" } 企业动态
+      %li<
+        %a{ href: "/news/media-reports/" } 媒体报道
+      %li<
+        %a{ href: "/news/brand-activities/" } 品牌活动
+      %li<
+        %a{ href: "/news/industry-news/" } 行业新闻
+      %li.dropdown<
+        %a{ href: "#" }<
+          %span.triangle.down
+  #newslist.center_content
+    %ul
+      {% for post in site.categories["news"] %}
+      %li>
+        %em {{ post.date | date:'%Y-%m-%d' }}
+        %span.hide_if_mobile 〔{{ post.type }}〕
+        %a{ href: '{{ post.url }}' } {{ post.title }}
+      {% endfor %}
+  .block.h50px

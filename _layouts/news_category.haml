@@ -1,0 +1,31 @@
+---
+layout: default
+body_style: page
+---
+.banner.banner-news
+%article
+  -# 请同时更改 news/index.haml
+  .page_nav
+    %ul
+      %li<
+        %a{ href: "/news/" } 全部新闻
+      %li{ class: "{% if page.type_eng == 'enterprise-news' %}active{% endif %}" }<
+        %a{ href: "/news/enterprise-news/" } 企业动态
+      %li{ class: "{% if page.type_eng == 'media-reports' %}active{% endif %}" }<
+        %a{ href: "/news/media-reports/" } 媒体报道
+      %li{ class: "{% if page.type_eng == 'brand-activities' %}active{% endif %}" }<
+        %a{ href: "/news/brand-activities/" } 品牌活动
+      %li{ class: "{% if page.type_eng == 'industry-news' %}active{% endif %}" }<
+        %a{ href: "/news/industry-news/" } 行业新闻
+      %li.dropdown<
+        %a{ href: "#" }<
+          %span.triangle.down
+  #newslist.center_content
+    %ul
+      {% for post in site.categories["news"] %}{% if post.type_eng == page.type_eng %}
+      %li>
+        %em {{ post.date | date:'%Y-%m-%d' }}
+        %span.hide_if_mobile 〔{{ post.type }}〕
+        %a{ href: '{{ post.url }}' } {{ post.title }}
+      {% endif %}{% endfor %}
+  .block.h50px
