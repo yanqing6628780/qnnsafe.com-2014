@@ -1,0 +1,42 @@
+---
+layout: default
+body_style: page
+belongs_to: network
+permalink: /network/
+title: 销售网点
+keywords: 保险柜
+description: 如您有需求，请根据实际情况查找离您最近的全能经销商和维修网点，全能保险柜公司会最快速便捷的为您查找出附近的全能经销商和维修网点。
+---
+:javascript
+  window.STORES_SRC = '{% asset_path stores %}';
+.banner.banner-stores
+  .banner-text.banner-text-stores
+%article
+  #stores
+    #stores-filter
+      %h3 查找离您最近的经销商和维修网点
+      .select
+        %select#province
+          %option{ value: '' } 选择省份/直辖市
+      .select
+        %select#city
+          %option{ value: '' } 选择城市
+    %table#stores-list.table
+      %thead.table-head
+        %tr
+          %th 店铺名称（点击进入代理商网站）
+          %th 省份
+          %th 城市
+          %th 县/区
+          %th 地址
+          %th 联系电话
+          %th 联系人
+      %tbody.table-body
+        %tr#ifnone
+          %td{ colspan: 8 } 请选择距离您最近的城市。
+      %tfoot.table-foot
+        %tr
+          %td{ colspan: 8 }
+            %span#stores_count 0
+            条记录
+  .block.h50px

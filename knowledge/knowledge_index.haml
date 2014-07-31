@@ -1,0 +1,35 @@
+---
+layout: default
+body_style: page
+belongs_to: support
+permalink: /knowledge/
+title: 产品知识
+keywords: 家用保险柜
+description: 保险柜的功能简单来说是防盗、防火，不因被盗或火灾招致损失，以下是保险柜，保险箱，家用保险柜，家用保险箱等系列的产品知识。
+---
+.banner.banner-service
+  .banner-text.banner-text-service
+%article
+  -# 请同时更改 _layouts/knowledge_category.haml
+  .page_nav
+    %ul
+      %li<
+        %a{ href: "/support/" } 服务与支持
+      %li<
+        %a{ href: "/support/manual/" } 产品说明书
+      %li.active<
+        %a{ href: "/knowledge/" } 产品知识
+      %li<
+        %a{ href: "/support/clean/" } 清洁保养
+      %li.dropdown<
+        %a{ href: "#" }<
+          %span.triangle.down
+  #newslist.center_content
+    %ul
+      {% for post in site.categories["knowledge"] %}
+      %li<
+        %em {{ post.date | date:'%Y-%m-%d' }}
+        %span.hide_if_mobile 〔{{ post.type }}〕
+        %a{ href: '{{ post.url }}' } {{ post.title }}
+      {% endfor %}
+  .block.h50px

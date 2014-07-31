@@ -1,0 +1,40 @@
+---
+layout: default
+body_style: page
+belongs_to: contact
+permalink: /maps/
+title: 网络地图
+keywords: 保险柜
+description: 广东安能保险柜制造有限公司网络地图显示全能保险柜厂家总部地址是广东省佛山市顺德大良街道凤翔工业区德翔路8号。
+---
+.banner.banner-map
+  .banner-text.banner-text-map
+%article
+  .page_nav
+    %ul
+      %li<
+        %a{ href: "/contact/" } 联系我们
+      %li.active<
+        %a{ href: "/maps/" } 网络地图
+      %li.dropdown<
+        %a{ href: "#" }<
+          %span.triangle.down
+  #maps.content.center_content
+    #allmap{:style => "width: 100%; height: 500px;"}
+      #map{:style => "height:100%;"}
+    #maplinks
+      %a.button{ href: 'http://j.map.baidu.com/Es5uM' } 在百度地图中查看大图
+      %a.button{ href: 'http://goo.gl/maps/uwFeI' } 在谷歌地图中查看大图
+      %a.button{ href: 'http://goo.gl/maps/T5j41' } 在 Google Maps 中查看大图
+    %script{:src => "http://api.map.baidu.com/api?v=1.4", :type => "text/javascript"}
+    %script{:src => "http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js", :type => "text/javascript"}
+    %link{:href => "http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css", :rel => "stylesheet"}/
+    :css
+      #maps li {
+        font-size: 12px;
+      }
+    :javascript
+      var map=new BMap.Map("map"),poi=new BMap.Point(113.216673, 22.849068);map.centerAndZoom(poi,17);map.enableScrollWheelZoom();
+      var content='<div style="margin:0;line-height:20px;padding:2px;">地址：广东省佛山市顺德大良街道凤翔工业区德翔路8号</div>',searchInfoWindow=new BMapLib.SearchInfoWindow(map,content,{title:"全能保险柜总部",width:200,height:40,panel:"panel",enableAutoPan:!0,searchTypes:[BMAPLIB_TAB_SEARCH,BMAPLIB_TAB_TO_HERE,BMAPLIB_TAB_FROM_HERE]}),marker=new BMap.Marker(poi);marker.enableDragging();marker.addEventListener("click",function(a){searchInfoWindow.open(marker)});
+      map.addOverlay(marker);searchInfoWindow.open(marker);
+  .block.h50px

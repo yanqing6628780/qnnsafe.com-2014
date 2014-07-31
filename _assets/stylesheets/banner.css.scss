@@ -1,0 +1,121 @@
+.banner {
+  height: 200px;
+  margin: 10px 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-qnn {
+  background: url(/assets/images/banners/qnn_wide.jpg) no-repeat center;
+//  @media only screen and (max-width: 480px) {
+//    background-position: -624px;
+//  }
+//  @media only screen and (max-width: 400px) {
+//    background-position: -720px;
+//  }
+}
+
+.banner-desert {
+  background: url(/assets/images/banners/desert.jpg) no-repeat center;
+}
+
+.banner-tao {
+  background: url(/assets/images/banners/tao.jpg) no-repeat center;
+}
+
+.banner-honors {
+  background: url(/assets/images/banners/honors.jpg) no-repeat center;
+}
+
+.banner-news {
+  background: url(/assets/images/banners/news.jpg) no-repeat center;
+}
+
+.banner-contact {
+  background: url(/assets/images/banners/contact.jpg) no-repeat center;
+}
+
+.banner-map {
+  background: url(/assets/images/banners/map.jpg) no-repeat center;
+}
+
+.banner-stores {
+  background: url(/assets/images/banners/stores.jpg) no-repeat center;
+}
+
+.banner-service {
+  background: url(/assets/images/banners/service.jpg) no-repeat center;
+}
+
+.banner-pano {
+  background: url(/assets/images/banners/pano.jpg) no-repeat center;
+}
+
+.banner-text {
+  background: url(/assets/images/banners/banner-sprites.png) no-repeat 0 0;
+  width: 200px;
+  height: 65px;
+  position: absolute;
+}
+
+.banner-text-qnn {
+  background-position: 0 0;
+  left: 50%;
+  top: 40%;
+//  @media only screen and (max-width: 480px) {
+//    left: 25px;
+//    top: 57px;
+//  }
+}
+
+.banner-text-desert {
+  background-position: 0 -74px;
+  left: 30%;
+  top: 40%;
+}
+
+.banner-text-tao {
+  background-position: 0 -209px;
+  left: 50%;
+  top: 40%;
+}
+
+.banner-text-honors {
+  background-position: 0 -142px;
+  left: 50%;
+  top: 40%;
+}
+
+.banner-text-contact {
+  background-position: 0 -277px;
+  left: 63%;
+  top: 40%;
+  height: 70px;
+}
+
+.banner-text-service {
+  background-position: 0 -418px;
+  left: 30%;
+  top: 34%;
+  height: 70px;
+  width: 225px;
+}
+
+.banner-text-map {
+  background-position: 0 -490px;
+  left: 36%;
+  top: 40%;
+}
+
+.banner-text-pano {
+  background-position: 0 -352px;
+  left: 28%;
+  top: 40%;
+  width: 256px;
+}
+
+.banner-text-stores {
+  background-position: 0 -556px;
+  left: 30%;
+  top: 52%;
+}

@@ -1,0 +1,86 @@
+---
+layout: default
+full_title: 保险柜,家用保险柜-全能保险柜箱十大品牌官网
+---
+%article#billboard
+  .bb.active
+    .link
+      %a{} 王者归来
+    .title
+      %img{ src: "/assets/images/billboards/wangzhe/title.png" }
+    .subtitle
+      %img{ src: "/assets/images/billboards/wangzhe/subtitle.png" }
+    .image
+      %img{ src: "/assets/images/billboards/wangzhe/wangzhe.jpg" }
+  .bb
+    .link
+      %a{} 佛罗伦萨
+    .title
+      %img{ src: "/assets/images/billboards/flls/title.png" }
+    .subtitle
+      %img{ src: "/assets/images/billboards/flls/subtitle.png" }
+    .image
+      %img{ src: "/assets/images/billboards/flls/flls.jpg" }
+  .bb
+    .link
+      %a{} 尚品格调
+    .title
+      %img{ src: "/assets/images/billboards/gediao/title.png" }
+    .subtitle
+      %img{ src: "/assets/images/billboards/gediao/subtitle.png" }
+    .image
+      %img{ src: "/assets/images/billboards/gediao/gediao.jpg" }
+  .bb
+    .link
+      %a{ href: "{{ site.www.qnnsafe.com }}/b-5440.html" } 全能金库B-5540
+    .title
+      %img{ src: "/assets/images/billboards/b-5440/title.png" }
+    .subtitle
+      %img{ src: "/assets/images/billboards/b-5440/subtitle.png" }
+    .image
+      %img{ src: "http://www.qnnsafe.com/images/products-large/b-5540_01.jpg" }
+  .bb
+    .link
+      %a{ href: "{{ site.www.qnnsafe.com }}/bw-6960.html" } 风生水起BW-6960
+    .title.one
+      %img{ src: "http://www.qnnsafe.com/images/products-large/bw-6960_text_01.png" }
+    .subtitle
+    .image
+      %img{ src: "http://www.qnnsafe.com/images/products-large/bw-6960_01.jpg" }
+  .bb
+    .link
+      %a{ href: "{{ site.www.qnnsafe.com }}/gtx-5842.html" } 钢铁侠GTX-5842
+    .title
+      %img{ src: "/assets/images/billboards/gtx-5842/title.png" }
+    .subtitle
+      %img{ src: "/assets/images/billboards/gtx-5842/subtitle.png" }
+    .image
+      %img{ src: "/assets/images/billboards/gtx-5842/gtx-5842.jpg" }
+  .bb
+    .link
+      %a{ href: "{{ site.www.qnnsafe.com }}/glf-8550.html" } 高尔夫GLF-8550
+    .title.one
+      %img{ src: "http://www.qnnsafe.com/images/products-large/glf-8550_text_01.png" }
+    .subtitle
+    .image
+      %img{ src: "http://www.qnnsafe.com/images/products-large/glf-8550_01.jpg" }
+#promo
+  %ul
+    %li
+      %a{ href: "{{ site.www.qnnsafe.com }}/support/", class: "promo_04", title: "全能保险柜服务与支持" }
+    %li
+      %a{ href: "{{ site.www.qnnsafe.com }}/cases/", class: "promo_02", title: "全能保险柜酒店工程案例" }
+    %li
+      %a{ href: "{{ site.www.qnnsafe.com }}/network/", class: "promo_03", title: "全能保险柜销售网点" }
+    %li
+      %a{ href: "http://www.qnnsafe.tv", class: "promo_01", title: "全能TV-保险柜视频漫画娱乐平台" }
+#newsslider.wide.sliderkit.newslider-minimal
+  .left<
+    %a{ href: "{{ site.www.qnnsafe.com }}/news/" }<> 新闻中心
+  .sliderkit-panels
+    {% for post in site.categories["news"] limit:300 %}
+    .sliderkit-panel<
+      = '〔{{ post.type }}〕'
+      %a{ href: '{{ site.www.qnnsafe.com }}{{ post.url }}', title: '{{ post.title }}' }<> {{ post.title }}
+      %span.date {{ post.date | date:"%Y年%m月%d日" }}
+    {% endfor %}

@@ -1,0 +1,32 @@
+title: 全能保险柜官网
+
+url: http://www.qnnsafe.com
+
+keywords: "保险柜,保险箱,家用保险柜,家用保险箱,保险柜十大品牌,全能保险柜"
+
+description: "广东安能保险柜制造有限公司旗下QNNsafe全能保险柜是国内保险柜十大品牌之一，专业制造保险柜、保险箱、家用保险柜、家用保险箱等安防产品。"
+
+permalink: /:categories/:title.html
+
+relative_permalinks: false
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - .
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  cache: true
+  cache_assets: true
+  gzip: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - stores.js
+
+prodimgs: http://www.qnnsafe.com/images/products-small

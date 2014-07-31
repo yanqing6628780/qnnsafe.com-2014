@@ -1,0 +1,72 @@
+.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
+.sliderkit a,
+.sliderkit a:hover{text-decoration:none;}
+.sliderkit a:focus{outline:1px dotted #000;}
+.sliderkit img{border:0;}
+.sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center;}
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:0 auto;}
+.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;}
+.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
+.sliderkit .sliderkit-btn{z-index:10;}
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
+.sliderkit .sliderkit-panel-active{z-index:5;}
+.sliderkit .sliderkit-panel-old{z-index:4;}
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+.sliderkit .sliderkit-count{position:absolute;top:5px;right:5px;z-index:10;padding:5px;color:#fff;background:#000;}
+.sliderkit .sliderkit-timer{position:absolute;top:0;left:0;z-index:10;height:3px;background:#ccc;}
+.newslider-minimal{height: 36px;}
+.newslider-minimal .sliderkit-panels{float:left;position:relative;}
+.newslider-minimal .sliderkit-panel{
+height: 36px;
+line-height: 18px;
+font-size: 13px;
+color: #666;
+padding-top: 10px;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.newslider-minimal .sliderkit-panel a{
+font-size: 13px;
+color: #666;
+text-decoration: none;
+}
+.newslider-minimal .sliderkit-panel a:hover{
+font-size: 13px;
+color: #005CE7;
+text-decoration: none;
+}
+.newslider-minimal .sliderkit-legend{
+float: left;
+color: #797979;
+font-size: 13px;
+font-weight: bold;
+}
+#newsslider {
+width: 100%;
+}
+#newsslider .left {
+width: 57px;
+height: 38px;
+float: left;
+line-height: 38px;
+font-size: 13px;
+color: #000;
+margin-left: 11px;
+}
+#newsslider .left a{
+font-size: 13px;
+color: #666;
+text-decoration: none;
+}
+#newsslider .left a:hover{
+font-size: 13px;
+color: #005CE7;
+text-decoration: none;
+}
+#newsslider .sliderkit-panels {
+width: 80%;
+float: left;
+}

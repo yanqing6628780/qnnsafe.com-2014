@@ -1,0 +1,221 @@
+---
+layout: nil
+in_sitemap: no
+permalink: /assets/xml/virtual_tour.xml
+---
+<?xml version="1.0" encoding="utf-8" ?>
+%krpano{onstart: "startup();", title: "Virtual Tour", version: "1.16"}
+  %include{url: "/assets/xml/vtourskin.xml"}
+  %skin_settings{bingmaps: "false", bingmaps_key: "", bingmaps_zoombuttons: "false", controlbar_offset: "20", gyro: "true", thumbs_crop: "0|40|240|160", thumbs_dragging: "true", thumbs_height: "80", thumbs_onhoverscrolling: "false", thumbs_opened: "false", thumbs_padding: "10", thumbs_scrollbuttons: "false", thumbs_scrollindicator: "false", thumbs_text: "false", thumbs_width: "120", tooltips_hotspots: "false", tooltips_mapspots: "false", tooltips_thumbs: "false"}
+  %action{name: "startup"}
+    if(startscene === null, copy(startscene,scene[9].name));
+    loadscene(get(startscene), null, MERGE);
+  %scene{heading: "", lat: "", lng: "", name: "scene_01", onstart: "", thumburl: "/images/panoramas/01.tiles/thumb.jpg", title: "01"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/01.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/01.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/01.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "36.637", atv: "6.420", linkedscene: "scene_08", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-56.776", atv: "4.958", linkedscene: "scene_02", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-18.561", atv: "2.902", linkedscene: "scene_03", name: "spot3", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_02", onstart: "", thumburl: "/images/panoramas/02.tiles/thumb.jpg", title: "02"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/02.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/02.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/02.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-173.599", atv: "4.790", linkedscene: "scene_01", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "136.338", atv: "2.851", linkedscene: "scene_08", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "43.119", atv: "3.937", linkedscene: "scene_03", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "24.145", atv: "0.742", linkedscene: "scene_04", name: "spot4", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-21.381", atv: "5.883", linkedscene: "scene_07", name: "spot5", style: "skin_hotspotstyle"}
+    %hotspot{ath: "1.669", atv: "2.554", linkedscene: "scene_09", name: "spot6", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_03", onstart: "", thumburl: "/images/panoramas/03.tiles/thumb.jpg", title: "03"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/03.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/03.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/03.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-7.758", atv: "2.468", linkedscene: "scene_08", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "22.403", atv: "2.263", linkedscene: "scene_01", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "48.332", atv: "8.020", linkedscene: "scene_02", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-178.676", atv: "4.382", linkedscene: "scene_04", name: "spot4", style: "skin_hotspotstyle"}
+    %hotspot{ath: "84.977", atv: "5.189", linkedscene: "scene_07", name: "spot5", style: "skin_hotspotstyle"}
+    %hotspot{ath: "127.603", atv: "2.883", linkedscene: "scene_09", name: "spot6", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_04", onstart: "", thumburl: "/images/panoramas/04.tiles/thumb.jpg", title: "04"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/04.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/04.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/04.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "74.796", atv: "4.632", linkedscene: "scene_03", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "104.193", atv: "2.571", linkedscene: "scene_02", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "179.626", atv: "4.697", linkedscene: "scene_05", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "123.758", atv: "4.304", linkedscene: "scene_09", name: "spot4", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_05", onstart: "", thumburl: "/images/panoramas/05.tiles/thumb.jpg", title: "05"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/05.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/05.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/05.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "178.686", atv: "2.741", linkedscene: "scene_04", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-85.371", atv: "2.919", linkedscene: "scene_06", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-152.507", atv: "1.057", linkedscene: "scene_09", name: "spot3", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_06", onstart: "", thumburl: "/images/panoramas/06.tiles/thumb.jpg", title: "06"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/06.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/06.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/06.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "87.593", atv: "1.161", linkedscene: "scene_05", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-178.895", atv: "3.773", linkedscene: "scene_07", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_07", onstart: "", thumburl: "/images/panoramas/07.tiles/thumb.jpg", title: "07"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/07.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/07.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/07.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-73.592", atv: "5.131", linkedscene: "scene_06", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "98.102", atv: "4.424", linkedscene: "scene_03", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "149.875", atv: "10.820", linkedscene: "scene_02", name: "spot4", style: "skin_hotspotstyle"}
+    %hotspot{ath: "45.863", atv: "1.357", linkedscene: "scene_09", name: "spot5", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-152.940", atv: "3.485", linkedscene: "scene_13", name: "spot6", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_08", onstart: "", thumburl: "/images/panoramas/08.tiles/thumb.jpg", title: "08"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/08.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/08.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/08.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "93.389", atv: "4.983", linkedscene: "scene_01", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-179.015", atv: "4.496", linkedscene: "scene_03", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "142.182", atv: "0.246", linkedscene: "scene_02", name: "spot4", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_09", onstart: "", thumburl: "/images/panoramas/09.tiles/thumb.jpg", title: "09"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/09.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/09.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/09.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "34.371", atv: "-0.061", linkedscene: "scene_04", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "132.731", atv: "5.514", linkedscene: "scene_03", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-178.803", atv: "3.073", linkedscene: "scene_02", name: "spot3", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-137.965", atv: "12.972", linkedscene: "scene_07", name: "spot4", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-34.529", atv: "0.518", linkedscene: "scene_05", name: "spot5", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_10", onstart: "", thumburl: "/images/panoramas/10.tiles/thumb.jpg", title: "10"}
+    %view{fov: "120.000", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0.000", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0.000"}
+    %preview{url: "/images/panoramas/10.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/10.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/10.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "14.933", atv: "0.942", linkedscene: "scene_11", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-33.012", atv: "-1.227", linkedscene: "scene_12", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_11", onstart: "", thumburl: "/images/panoramas/11.tiles/thumb.jpg", title: "11"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/11.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/11.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/11.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-88.608", atv: "-0.717", linkedscene: "scene_12", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "177.723", atv: "-1.880", linkedscene: "scene_10", name: "spot2", style: "skin_hotspotstyle"}
+    %hotspot{ath: "23.328", atv: "-2.089", linkedscene: "scene_14", name: "spot3", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_12", onstart: "", thumburl: "/images/panoramas/12.tiles/thumb.jpg", title: "12"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/12.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/12.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/12.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "0.000", atv: "0.000", linkedscene: "scene_13", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "87.368", atv: "-1.535", linkedscene: "scene_11", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_13", onstart: "", thumburl: "/images/panoramas/13.tiles/thumb.jpg", title: "13"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/13.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/13.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/13.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-60.310", atv: "-0.586", linkedscene: "scene_07", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-172.498", atv: "2.065", linkedscene: "scene_12", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_14", onstart: "", thumburl: "/images/panoramas/14.tiles/thumb.jpg", title: "14"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/14.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/14.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/14.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-160.022", atv: "-2.600", linkedscene: "scene_11", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "36.203", atv: "-1.180", linkedscene: "scene_15", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_15", onstart: "", thumburl: "/images/panoramas/15.tiles/thumb.jpg", title: "15"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/15.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/15.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/15.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "32.956", atv: "-1.879", linkedscene: "scene_14", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "173.539", atv: "-3.050", linkedscene: "scene_16", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_16", onstart: "", thumburl: "/images/panoramas/16.tiles/thumb.jpg", title: "16"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/16.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/16.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/16.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-1.625", atv: "0.000", linkedscene: "scene_17", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-167.216", atv: "-2.330", linkedscene: "scene_15", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_17", onstart: "", thumburl: "/images/panoramas/17.tiles/thumb.jpg", title: "17"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/17.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/17.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/17.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "-123.271", atv: "-1.796", linkedscene: "scene_16", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-20.665", atv: "-2.403", linkedscene: "scene_18", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_18", onstart: "", thumburl: "/images/panoramas/18.tiles/thumb.jpg", title: "18"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/18.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/18.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/18.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "21.503", atv: "-5.636", linkedscene: "scene_17", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "140.794", atv: "-6.354", linkedscene: "scene_19", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_19", onstart: "", thumburl: "/images/panoramas/19.tiles/thumb.jpg", title: "19"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/19.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/19.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/19.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "125.937", atv: "-2.878", linkedscene: "scene_18", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-62.307", atv: "-2.107", linkedscene: "scene_20", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_20", onstart: "", thumburl: "/images/panoramas/20.tiles/thumb.jpg", title: "20"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/20.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/20.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/20.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "66.949", atv: "-4.616", linkedscene: "scene_19", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-31.529", atv: "2.961", linkedscene: "scene_21", name: "spot2", style: "skin_hotspotstyle"}
+  %scene{heading: "", lat: "", lng: "", name: "scene_21", onstart: "", thumburl: "/images/panoramas/21.tiles/thumb.jpg", title: "21"}
+    %view{fov: "120", fovmax: "140", fovmin: "70", fovtype: "MFOV", hlookat: "0", limitview: "auto", maxpixelzoom: "2.0", vlookat: "0"}
+    %preview{url: "/images/panoramas/21.tiles/preview.jpg"}
+    %image
+      %cube{url: "/images/panoramas/21.tiles/pano_%s.jpg"}
+      %mobile
+        %cube{url: "/images/panoramas/21.tiles/mobile_%s.jpg"}
+    %hotspot{ath: "46.161", atv: "-4.726", linkedscene: "scene_20", name: "spot1", style: "skin_hotspotstyle"}
+    %hotspot{ath: "-172.356", atv: "-4.263", linkedscene: "scene_11", name: "spot2", style: "skin_hotspotstyle"}

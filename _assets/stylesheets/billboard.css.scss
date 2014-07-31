@@ -1,0 +1,179 @@
+#billboard {
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+
+  .bb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 540px;
+    display: none;
+
+    .link a {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      outline: none;
+      overflow: hidden;
+      text-indent: -9999px;
+    }
+
+    .one {
+      top: 150px !important;
+    }
+
+    .title {
+      position: absolute;
+      left: 80px;
+      top: 75px;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 80px;
+      top: 275px;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .image {
+      position: absolute;
+      right: -30px;
+      top: 50px;
+      opacity: 0;
+    }
+
+  }
+  .active {
+    display: block;
+  }
+  
+  .bb-l2r {
+    height: 540px;
+    position: relative;
+
+    .link a {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      outline: none;
+      overflow: hidden;
+      text-indent: -9999px;
+    }
+
+    .title {
+      position: absolute;
+      left: 680px;
+      top: 75px;
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 680px;
+      top: 275px;
+    }
+
+    .image {
+      position: absolute;
+      left: 15px;
+      top: 30px;
+    }
+
+  }
+
+}
+
+.cc {
+  height: 500px;
+  position: relative;
+
+  .title {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    left: 70px;
+    top: 130px;
+  }
+
+  .image {
+    position: absolute;
+    opacity: 0;
+    right: 20px;
+    top: 50px;
+  }
+
+  .hover {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.cc-l2r {
+  height: 399px;
+  position: relative;
+
+  .title {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 150px;
+  }
+
+  .image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+}
+
+.cc-r2l {
+  height: 399px;
+  position: relative;
+
+  .title {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 150px;
+  }
+
+  .image {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+}
+
+.height_300 {
+  height: 300px;
+  .title {
+    top: 100px;
+  }
+}
+
+.height_600 {
+  height: 600px;
+}
+
+.height_700 {
+  height: 700px;
+  .title {
+    top: 250px;
+  }
+}

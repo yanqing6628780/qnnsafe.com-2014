@@ -1,0 +1,12 @@
+# see rake build
+
+# compress javascripts and stylesheets
+assets:
+  compress:
+    css: sass
+    js:  uglifier
+
+# absolute links
+www:
+  qnnsafe:
+    com: http://www.qnnsafe.com
