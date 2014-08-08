@@ -33,7 +33,7 @@ qnnsafe.com-2014
 
 2. 进入源码根目录: ``cd qnnsafe.com-2014``
 
-3. 生成网站: ``jekyll build``
+3. 生成网站: ``rake build``
 
 
 开发者
