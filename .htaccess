@@ -1,0 +1,22 @@
+# turn on redirection
+RewriteEngine on
+
+# old domain redirection
+RewriteCond %{http_host} ^qnn.com.cn [nc]
+RewriteRule ^(.*)$ http://www.qnnsafe.com/ [L,R=301]
+
+# non-www redirects to www
+RewriteCond %{http_host} ^qnnsafe.com [nc]
+RewriteRule ^(.*)$ http://www.qnnsafe.com/$1 [L,R=301]
+
+# redirect index.html to its folder
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://www.qnnsafe.com/$1 [R=301,L]
+
+# compress html, js and css files
+<ifmodule mod_deflate.c>
+AddOutputFilter DEFLATE html js css
+</ifmodule>
+
+# remove useless header
+Header unset X-UA-Compatible
